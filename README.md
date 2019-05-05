@@ -1,7 +1,6 @@
-## Endpoints
-
+## Events
 ### Auth
-#### POST - /auth
+#### sign_in
 
 ```json
 {
@@ -11,7 +10,7 @@
 ```
 
 ### Rooms
-#### POST - /rooms/new
+#### new
 - `Requires authentication`
 
 #### Response
@@ -20,14 +19,14 @@
     "key": "AGT3920"
 }
 ```
-#### POST - /rooms/signin
+#### sign_in
 ```json
 {
     "key": "AGT3920"
 }
 ```
 ### Screens
-#### POST - /screens
+#### register
 ```json
 {
     "device_hash": "56fe4b898cb23beb92aa6238419151a7"
@@ -35,7 +34,7 @@
 ```
 ### Resources
 
-#### GET - /resources/pictures
+#### get_pictures
 
 ```json
 [
@@ -56,7 +55,7 @@
 
 ### Players
 
-#### POST - /players
+#### register
 
 ```json
 {

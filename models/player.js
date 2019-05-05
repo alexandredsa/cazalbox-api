@@ -5,6 +5,7 @@ const PlayerSchema = new mongoose.Schema({
     _id: { type: String, default: uuidv4() },
     nickname: String,
     pictureUri: String,
+    deviceHash: String,
     score: Number
 }, {
   versionKey: false

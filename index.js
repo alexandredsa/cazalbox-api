@@ -1,3 +1,5 @@
-const server = require("./infrastructure/server");
+const database = require("./infrastructure/database");
+const socket = require("./infrastructure/socket");
 
-server.run();
+database()
+    .then(() => socket.run());
