@@ -1,0 +1,32 @@
+{
+  "name": "cazalbox",
+  "version": "0.0.1",
+  "description": "API criada para prover recursos para uma plataforma de party game.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandredsa/cazalbox-api.git"
+  },
+  "keywords": [
+    "cazalbox",
+    "party",
+    "game",
+    "party-game"
+  ],
+  "author": "Alexandre Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandredsa/cazalbox-api/issues"
+  },
+  "homepage": "https://github.com/alexandredsa/cazalbox-api#readme",
+  "dependencies": {
+    "config": "^3.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "uuid": "^3.3.2"
+  }
+}
