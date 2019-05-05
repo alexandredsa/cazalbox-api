@@ -22,7 +22,7 @@ UserModel.validateAuth = (credentials) => {
     credentials.password = md5(credentials.password);
     credentials.status = true;
     UserModel.findOne(credentials)
-      .then(user => resolve(!!user))
+      .then(user => resolve(user))
       .catch(err => reject(err))
   })
 
