@@ -21,9 +21,12 @@ module.exports = {
         });
     },
     sign_in: (client, cb) => {
-        client.on('room_sign_in', key => {
-            client.emit("room_sign_in_response", { key });
-            cb(true);
+        client.on('room_sign_in', data => {
+            SessionModel.findOne({ 'room.key': data.key })
+                .then(session => {
+                    client.emit("room_sign_in_response", { result: !!session });
+                    cb({ room_key: data.key, validate: true });
+                });
         });
     }
 }
