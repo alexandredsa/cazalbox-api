@@ -6,6 +6,7 @@ const PlayerSchema = new mongoose.Schema({
   nickname: String,
   pictureUri: String,
   deviceHash: String,
+  isAdmin: Boolean,
   score: Number
 }, {
     versionKey: false
@@ -37,6 +38,9 @@ const SessionSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now()
+  },
+  startedAt: {
+    type: Date
   }
 }, {
     versionKey: false
